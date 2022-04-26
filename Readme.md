@@ -1,12 +1,30 @@
-# Generate time-based one time passwords in the browser
+# Generate time-based one time passwords in the browser <!-- omit in toc -->
 
-![](totp-generator.png)
+![A snapshot of the totp token generator website](assets/img/totp-generator.png)
 
-[Demo](https://totp.danhersam.com/)
+## Table of Contents <!-- omit in toc -->
+
+- [Introduction](#introduction)
+- [Full Demo Link](#full-demo-link)
+- [Providing parameters in the URL](#providing-parameters-in-the-url)
+  - [Private key](#private-key)
+  - [Digits and period](#digits-and-period)
+- [Authy support](#authy-support)
+  - [Extract Authy secret key from Chrome App](#extract-authy-secret-key-from-chrome-app)
+  - [Convert hex keys to base-32](#convert-hex-keys-to-base-32)
+  - [Authy settings](#authy-settings)
+  - [Import using QR codes](#import-using-qr-codes)
+- [Other Resources](#other-resources)
+
+## Introduction
 
 This page lets you easily generate a time-based one time password (TOTP) entirely in the web browser in case you ever lose access to your phone.
 
 It uses the excellent [otpauth](https://github.com/zant95/otpauth) package, downloaded from [raw.githubusercontent.com/zant95/otpauth/master/dist/otpauth.min.js](https://raw.githubusercontent.com/zant95/otpauth/master/dist/otpauth.min.js).
+
+## Full Demo Link
+
+[Full Demo](https://totp.danhersam.com/)
 
 ## Providing parameters in the URL
 
@@ -15,6 +33,7 @@ It uses the excellent [otpauth](https://github.com/zant95/otpauth) package, down
 You can provide the key in the URL using the URI fragment or a query parameter, for example: `https://totp.danhersam.com/#/KEY` or `https://totp.danhersam.com?key=KEY`
 
 ### Digits and period
+
 You can also provide the digits and token period using a query string in the URL, for example: `https://totp.danhersam.com/?period=60&digits=6&key=KEY`
 
 ## Authy support
@@ -53,7 +72,7 @@ If your authenticator application only allows 6 or 8 digits (like [FreeOTP](http
 
 To make it easier to import Authy entries into another authenticator app, generate QR codes using my [QR code generator](https://dan.hersam.com/tools/gen-qr-code.html).
 
-### Other Resources
+## Other Resources
 
 * https://www.pommepause.com/2014/10/how-to-extract-your-totp-secrets-from-authy/
 * https://github.com/winauth/winauth/issues/545
