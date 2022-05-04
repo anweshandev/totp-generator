@@ -5,6 +5,7 @@
 ## Table of Contents <!-- omit in toc -->
 
 - [Introduction](#introduction)
+  - [Libraries Used](#libraries-used)
 - [Full Demo Link](#full-demo-link)
 - [Providing parameters in the URL](#providing-parameters-in-the-url)
   - [Private key](#private-key)
@@ -26,17 +27,17 @@ The library uses the excellent [otpauth](https://github.com/zant95/otpauth) pack
 
 ## Full Demo Link
 
-[Full Demo](https://totp.danhersam.com/)
+[Full Demo](https://totp.anweshan.com/)
 
 ## Providing parameters in the URL
 
 ### Private key
 
-You can provide the key in the URL using the URI fragment or a query parameter, for example: `https://totp.danhersam.com/#/KEY` or `https://totp.danhersam.com?key=KEY`
+You can provide the key in the URL using the URI fragment or a query parameter, for example: `https://totp.anweshan.com/#/KEY` or `https://totp.anweshan.com?key=KEY`
 
 ### Digits and period
 
-You can also provide the digits and token period using a query string in the URL, for example: `https://totp.danhersam.com/?period=60&digits=6&key=KEY`
+You can also provide the digits and token period using a query string in the URL, for example: `https://totp.anweshan.com/?period=60&digits=6&key=KEY`
 
 ## Authy support
 
@@ -57,7 +58,7 @@ appManager.getModel().forEach(model => console.log(`${model.name}: ${model.secre
 
 ### Convert hex keys to base-32
 
-Convert each exported hex key from above using the [hex to base-32 converter](https://totp.danhersam.com/hex-to-base32.html) in this repository.
+Convert each exported hex key from above using the [hex to base-32 converter](https://totp.anweshan.com/hex-to-base32.html) in this repository.
 
 ### Authy settings
 
@@ -76,8 +77,8 @@ To make it easier to import Authy entries into another authenticator app, genera
 
 ## Other Resources
 
-* https://www.pommepause.com/2014/10/how-to-extract-your-totp-secrets-from-authy/
-* https://github.com/winauth/winauth/issues/545
-* https://randomoracle.wordpress.com/2017/02/15/extracting-otp-seeds-from-authy/
-* https://gist.github.com/tresni/83b9181588c7393f6853
-* https://gist.github.com/Ingramz/14a9c39f8c306a2d43b4
+- https://www.pommepause.com/2014/10/how-to-extract-your-totp-secrets-from-authy/
+- https://github.com/winauth/winauth/issues/545
+- https://randomoracle.wordpress.com/2017/02/15/extracting-otp-seeds-from-authy/
+- https://gist.github.com/tresni/83b9181588c7393f6853
+- https://gist.github.com/Ingramz/14a9c39f8c306a2d43b4
