@@ -27,17 +27,17 @@ The library uses the excellent [otpauth](https://github.com/zant95/otpauth) pack
 
 ## Full Demo Link
 
-[Full Demo](https://anrcry.github.io/)
+[Full Demo](https://totp.cybrix.in/)
 
 ## Providing parameters in the URL
 
 ### Private key
 
-You can provide the key in the URL using the URI fragment or a query parameter, for example: `https://anrcry.github.io/#/KEY` or `https://anrcry.github.io?key=KEY`
+You can provide the key in the URL using the URI fragment or a query parameter, for example: `https://totp.cybrix.in/#/KEY` or `https://totp.cybrix.in?key=KEY`
 
 ### Digits and period
 
-You can also provide the digits and token period using a query string in the URL, for example: `https://anrcry.github.io/?period=60&digits=6&key=KEY`
+You can also provide the digits and token period using a query string in the URL, for example: `https://totp.cybrix.in/?period=60&digits=6&key=KEY`
 
 ## Authy support
 
@@ -58,7 +58,7 @@ appManager.getModel().forEach(model => console.log(`${model.name}: ${model.secre
 
 ### Convert hex keys to base-32
 
-Convert each exported hex key from above using the [hex to base-32 converter](https://anrcry.github.io/hex-to-base32.html) in this repository.
+Convert each exported hex key from above using the [hex to base-32 converter](https://totp.cybrix.in/hex-to-base32.html) in this repository.
 
 ### Authy settings
 
